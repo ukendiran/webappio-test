@@ -1,0 +1,5 @@
+FROM ../base/Layerfile
+
+COPY . .
+SPLIT 5
+RUN ./parallel-go-test.sh
